@@ -1,0 +1,163 @@
+.card{
+    width:500px;
+    height:300px;
+    margin-left:500px;
+    margin-top:50px;
+}
+#finaltext{
+    text-align: center;
+    margin-top:100px;
+    font-display: bold;
+}
+
+body, html{
+	height:100%;
+	width:100%;
+}
+body{
+	position:relative;
+	overflow:hidden;
+	font-family: Lora, serif;
+	background:#F0F0F0 !important;
+}
+*{
+	font-family: inherit;
+}
+
+.color{
+	color:#303F9F;
+}
+
+.main-content > .page-border{
+	position:absolute;
+	border:solid 1px #FFF;
+	border-color:rgba(255,255,255,.4);
+	z-index:999;
+	-webkit-transition:border-color 2.5s cubic-bezier(.785,.135,.15,.86);
+	-moz-transition:border-color 2.5s cubic-bezier(.785,.135,.15,.86);
+	transition:border-color 2.5s cubic-bezier(.785,.135,.15,.86);
+}
+body.border-dark .main-content > .page-border{
+	border-color:#303F9F;
+}
+.main-content > .border-top,
+.main-content > .border-bottom{
+	height:7px;
+	left:20px;
+	right:20px;
+}
+.main-content > .border-top{
+	top:14px;
+}
+.main-content > .border-bottom{
+	bottom:14px;
+}
+.main-content > .border-left,
+.main-content > .border-right{
+	width:7px;
+	top:20px;
+	bottom:20px;
+}
+.main-content > .border-right{
+	right:14px;
+}
+.main-content > .border-left{
+	left:14px;
+}
+
+
+/*=======================================================
+	Section Styles
+=======================================================*/
+.main-content{
+	position:fixed;
+	top:100px;
+	left:40px;
+	right:40px;
+	bottom:40px;
+	z-index:99;
+	overflow:hidden;
+	box-shadow: 0 0 0 10px #FFF;
+}
+.section{
+	position:absolute;
+	top:100;
+	left:0;
+	right:0;
+	bottom:0;
+	overflow:auto;
+	z-index:-1;
+	visibility:hidden;
+	padding-top:50px;
+	background:#F0F0F0;
+}
+.section.active{
+	visibility:visible;
+	z-index:99;
+}
+.section-header{
+	position:relative;
+}
+.section-header > h2{
+	font-size:28px;
+	font-weight:200;
+	margin:0;
+	text-transform:uppercase;
+	letter-spacing:4px;
+}
+.section-block{
+	padding:110px;
+	padding-top:100;
+}
+body.section-switching .main-content:before,
+body.section-switching .main-content:after{
+	z-index:299;
+}
+body.border-dark .main-content:before,
+body.border-dark .main-content:after{
+	border-color:#303F9F;
+}
+.sections{
+	height:100%;
+	width:100%;
+}
+/*=======================================================
+	Main Section
+=======================================================*/
+
+.section-main:before{
+	content: ' ';
+	position:absolute;
+	top:100;
+	left:0;
+	height:100%;
+	width:100%;
+	background:#303F9F;
+	opacity:.8;
+	z-index:-1;
+}
+
+.section-main{
+	padding:0;
+}
+.section-main, .section-main > .container-fluid{
+	height:100%;
+	width:100%;
+}
+.v-align{
+	display:table;
+	height:100%;
+	width:100%;
+	margin-top:50px;
+}
+.v-align > .inner{
+	height:100%;
+	width:100%;
+	display:table-cell;
+	vertical-align:middle;
+	margin-top:50px;
+}
+
+
+
+

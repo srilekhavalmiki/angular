@@ -1,0 +1,76 @@
+<meta charset="utf-8">
+
+<link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<body>
+       
+        
+                
+                
+                
+                <div class='main-content' >
+                    
+                    <!--=====================================================
+                        Page Borders
+                    =====================================================-->
+                    <div class='page-border border-left' ></div>
+                    <div class='page-border border-right' ></div>
+                    <div class='page-border border-top' ></div>
+                    <div class='page-border border-bottom' ></div>
+                     <div class='sections' >
+                        
+                        <section id='intro' class='section section-main active' >
+                            
+                            <div class='container-fluid' >
+                                
+                                <div class='v-align' >
+                                    <div class='inner' >
+                                        <div class='intro-text' >
+                                            
+                                                <div class="card"  >
+                                                        <div class="card-header" *ngIf="display">
+                                                           {{i+1}}.{{question}}
+                                                        </div>
+                                                        <div class="card-body" *ngIf="display">
+                                                            <p class="card-text"><input type="radio" value="{{op1}}" name="op" (change)="selectedvalue($event)" >{{op1}}</p>
+                                                            <p class="card-text"><input type="radio" value="{{op2}}" name="op" (change)="selectedvalue($event)" >{{op2}}</p>
+                                                            <p class="card-text"><input type="radio" value="{{op3}}" name="op" (change)="selectedvalue($event)" >{{op3}}</p>
+                                                        </div>
+                                                        <div class="card-body" id="finaltext" *ngIf="!display">Thank u for ur time</div>
+                                                        
+                                                        <div class="card-footer" *ngIf="display">
+                                                            
+                                                            <button type="submit" class="btn btn-primary" (click)="nextques()">Next</button>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                     
+                                            <div class='intro-btns' >
+                                                
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        
+                        </section>
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+                <div>
+                
+            </div>
+                
+
+</body>
+
+
